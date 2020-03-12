@@ -9,7 +9,7 @@ class Song < ActiveRecord::Base
 
   def drake_made_this
     Artist.all.each do |i|
-      binding.pry
+    binding.pry
     end
   end
 end
