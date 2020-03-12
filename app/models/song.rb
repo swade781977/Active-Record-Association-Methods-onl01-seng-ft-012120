@@ -8,7 +8,7 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    artists.all 
+    artist.all 
     binding.pry
     self.artist.song = self
   end
