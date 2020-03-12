@@ -9,10 +9,10 @@ class Song < ActiveRecord::Base
 
   def drake_made_this
     if Artist.name.include?('Drake')
-      
+      artists.find_by()
       self.artist_id = d.id
     else
-      d = Artist.new('Drake')
+      d = atrists.create('Drake')
       self.artist_id = d.id
     binding.pry
   end
