@@ -8,6 +8,6 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    song.artists
+    song.artists_id
   end
 end
