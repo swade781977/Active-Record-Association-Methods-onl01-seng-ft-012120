@@ -14,7 +14,6 @@ class Song < ActiveRecord::Base
     else
       d = Artist.create(name: 'Drake')
       self.artist_id = d.id
-    binding.pry
     end
   end
 end
