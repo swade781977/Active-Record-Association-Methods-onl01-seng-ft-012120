@@ -8,11 +8,11 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    if artists.exists?(name: 'Drake')
-      artists.find_by name: 'Drake'
+    if Artist.exists?(name: 'Drake')
+      d = Artist.find_by name: 'Drake'
       self.artist_id = d.id
     else
-      d = artists.create('Drake')
+      d = Artist.create('Drake')
       self.artist_id = d.id
     binding.pry
     end
