@@ -8,7 +8,7 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    song.artists_id.each do |i|
+    songs.artists_id.each do |i|
       artists.find(i)
       binding.pry
     end
