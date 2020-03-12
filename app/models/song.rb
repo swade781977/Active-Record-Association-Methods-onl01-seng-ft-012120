@@ -8,6 +8,7 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    song.artists_id
+    song.artists_id.each do |i|
+      if artists()
   end
 end
