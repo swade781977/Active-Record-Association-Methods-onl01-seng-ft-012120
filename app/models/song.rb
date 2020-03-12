@@ -8,6 +8,6 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    artists.find_or_create
+    artists.find_or_create_by()
   end
 end
