@@ -8,7 +8,7 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    if artists.exists?
+    if artists.exists?(name: 'Drake')
       artists.find_by name: 'Drake'
       self.artist_id = d.id
     else
