@@ -9,6 +9,8 @@ class Song < ActiveRecord::Base
 
   def drake_made_this
     song.artists_id.each do |i|
-      if artists()
+      artists.find(i)
+      binding.pry
+    end
   end
 end
