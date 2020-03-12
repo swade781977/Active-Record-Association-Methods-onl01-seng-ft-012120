@@ -11,6 +11,5 @@ class Song < ActiveRecord::Base
       Artist.all.each do |a|
         binding.pry
       end
-    self.artist.song = self
   end
 end
