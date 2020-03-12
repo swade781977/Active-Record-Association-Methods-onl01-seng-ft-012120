@@ -18,5 +18,6 @@ class Genre < ActiveRecord::Base
     a  = self.artists
     arr = []
     a.each{|t| arr << t.name}
+    arr
   end
 end
