@@ -12,7 +12,7 @@ class Song < ActiveRecord::Base
       d = Artist.find_by name: 'Drake'
       self.artist_id = d.id
     else
-      d = Artist.create('Drake')
+      d = Artist.create(name: 'Drake')
       self.artist_id = d.id
     binding.pry
     end
