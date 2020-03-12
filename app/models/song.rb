@@ -13,6 +13,7 @@ class Song < ActiveRecord::Base
       self.artist_id = d.id
     else
       d = Artist.new('Drake')
+      self.artist_id = d.id
     binding.pry
   end
 end
