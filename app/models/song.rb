@@ -15,5 +15,6 @@ class Song < ActiveRecord::Base
       d = atrists.create('Drake')
       self.artist_id = d.id
     binding.pry
+    end
   end
 end
