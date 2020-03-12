@@ -8,8 +8,7 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    Artist.all.each do |i|
+    Artist.name.include?('Drake')
     binding.pry
-    end
   end
 end
