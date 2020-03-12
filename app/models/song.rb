@@ -1,3 +1,4 @@
+require 'pry'
 class Song < ActiveRecord::Base
   belongs_to :artist
   belongs_to :genre
@@ -7,7 +8,7 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    if artist.all.include?('Drake')
+    if artist('Drake')
       self.artist_id = drake.id
     else
       drake = Artist.new('Drake')
